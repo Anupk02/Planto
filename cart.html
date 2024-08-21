@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planto</title>
+    <link rel="icon" type="image/x-icon" href="fevicon.png">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="/css/all.min.css">
+    <script src="jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="head.css">
+     <link rel="stylesheet" href="style1.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
+<script src="items.js"> </script>
+
+
+<style>
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+          <div class="icon">
+            <img src="logo_thumbnail.png" class="logo" alt="icon">
+          </div>
+        
+            <div class="menu-bar">
+              <div class="navbar">
+                <ul>
+                    <li><a  id="navb" href="index.html"><i  class="fa-solid fa-house"></i> HOME</a></li>
+                    <div class="subnav">
+                    <li class="subnav-item"><a id="navb" href="#">PLANTS <i class="fa-solid fa-chevron-down"></i></a>
+                      <div class="sub-menu-1">
+                      <ul>
+                        <li><a href="/index1.html"><i class="fa-solid fa-leaf"></i>   Air Plants</a></li>
+                        <li><a href="#"><i class="fa-solid fa-leaf"></i>   Aquatic Plants</a></li>
+                        <li><a href="#"><i class="fa-solid fa-leaf"></i>   Herb plants</a></li>
+                        <li><a href="#"><i class="fa-solid fa-leaf"></i>   Fruit plants</a></li>
+                        <li><a href="#"><i class="fa-solid fa-leaf"></i>   Flower plants</a></li>
+                        <li><a href="#"><i class="fa-solid fa-leaf"></i>   Decoration plants</a></li>
+                      </ul>        
+                    </li></div>
+                    <li><a  id="navb" href="content.html">CONTENT</a></li>
+                    <li><a id="navb" href="about.html">ABOUT</a></li>
+                    <li><a id="navb" href="fedback.html">FEADBACK</a></li>
+                    <div class="search-box">
+                    <button class="btn-search"><i class="fas fa-search"></i></button>
+                    <input type="text" class="input-search" id="inp" placeholder="Type to Search..">
+                    </div>
+
+                    <div class="login-btn">
+                    <button id="form-open" class="btn-search" ><i class="fa-solid fa-user"></i>    Login</button>
+                    </div>
+                    <div class="login-cart">
+                    <button class="btn-search" id="cart"><i class="fa-solid fa-cart-shopping"></i> cart</i></button>
+                  </div>
+                </ul>   
+              </div>
+            </div>  
+          </div>
+              <section class="home">
+                <div class="form_container">
+                  <i class="uil uil-times form_close"></i>
+
+                  <!-- Login From -->
+                  <div class="form login_form">
+                    <form action="login.php">
+                      <h2><i class="fa-solid fa-user"></i>Login</h2>
+          
+                      <div class="input_box">
+                        <input type="email" placeholder="Enter your email" required />
+                        <i class="uil uil-envelope-alt email"></i>
+                      </div>
+                      <div class="input_box">
+                        <input type="password" placeholder="Enter your password" required />
+                        <i class="uil uil-lock password"></i>
+                        <i class="uil uil-eye-slash pw_hide"></i>
+                      </div>
+          
+                      <div class="option_field">
+                        <span class="checkbox">
+                          <input type="checkbox" id="check" />
+                          <label for="check">Remember me</label>
+                        </span>
+                        <a href="#" class="forgot_pw">Forgot password?</a>
+                      </div>
+          
+                      <button class="button">Login Now</button>
+          
+                      <div class="login_signup">Don't have an account? <a href="#" id="signup">Signup</a></div>
+                    </form>
+                  </div>
+          
+                  <!-- Signup From -->
+                  <div class="form signup_form">
+                    <form action="signin.php">
+                      <h2><i class="fa-solid fa-user-plus"></i> Signup</h2>
+          
+                      <div class="input_box">
+                        <input type="email" placeholder="Enter your email" required />
+                        <i class="uil uil-envelope-alt email"></i>
+                      </div>
+                      <div class="input_box">
+                        <input type="password" placeholder="Create password" required />
+                        <i class="uil uil-lock password"></i>
+                        <i class="uil uil-eye-slash pw_hide"></i>
+                      </div>
+                      <div class="input_box">
+                        <input type="password" placeholder="Confirm password" required />
+                        <i class="uil uil-lock password"></i>
+                        <i class="uil uil-eye-slash pw_hide"></i>
+                      </div>
+          
+                      <button class="button">Signup Now</button>
+          
+                      <div class="login_signup">Already have an account? <a href="#" id="login">Login</a></div>
+                    </form>
+                  </div>
+                </div>
+              </section>
+              <script src="login.js"></script>
+
+        <hr class="new">
+        <section class="pt-5 pb-5">
+            <div class="container">
+              <div class="row w-100">
+                  <div class="col-lg-12 col-md-12 col-12">
+                      <h3 class="display-5 mb-2 text-center">Shopping Cart</h3>
+                      <p class="mb-5 text-center">
+                          <i class="text-info font-weight-bold">3</i> items in your cart</p>
+                      <table id="shoppingCart" class="table table-condensed table-responsive">
+                          <thead>
+                              <tr>
+                                  <th style="width:60%">Product</th>
+                                  <th style="width:12%">Price</th>
+                                  <th style="width:10%">Quantity</th>
+                                  <th style="width:16%"></th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td data-th="Product">
+                                      <div class="row">
+                                          <div class="col-md-3 text-left">
+                                              <img src="https://via.placeholder.com/250x250/5fa9f8/ffffff" alt="" class="img-fluid d-none d-md-block rounded mb-2 shadow ">
+                                          </div>
+                                          <div class="col-md-9 text-left mt-sm-2">
+                                              <h4>Product Name</h4>
+                                              <p class="font-weight-light">Brand &amp; Name</p>
+                                          </div>
+                                      </div>
+                                  </td>
+                                  <td data-th="Price">$49.00</td>
+                                  <td data-th="Quantity">
+                                      <input type="number" class="form-control form-control-lg text-center" value="1">
+                                  </td>
+                                  <td class="actions" data-th="">
+                                      <div class="text-right">
+                                          <button class="btn btn-white border-secondary bg-white btn-md mb-2">
+                                              <i class="fas fa-sync"></i>
+                                          </button>
+                                          <button class="btn btn-white border-secondary bg-white btn-md mb-2">
+                                              <i class="fas fa-trash"></i>
+                                          </button>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td data-th="Product">
+                                      <div class="row">
+                                          <div class="col-md-3 text-left">
+                                              <img src="https://via.placeholder.com/250x250/5fa9f8/ffffff" alt="" class="img-fluid d-none d-md-block rounded mb-2 shadow ">
+                                          </div>
+                                          <div class="col-md-9 text-left mt-sm-2">
+                                              <h4>Product Name</h4>
+                                              <p class="font-weight-light">Brand &amp; Name</p>
+                                          </div>
+                                      </div>
+                                  </td>
+                                  <td data-th="Price">$49.00</td>
+                                  <td data-th="Quantity">
+                                      <input type="number" class="form-control form-control-lg text-center" value="1">
+                                  </td>
+                                  <td class="actions" data-th="">
+                                      <div class="text-right">
+                                          <button class="btn btn-white border-secondary bg-white btn-md mb-2">
+                                              <i class="fas fa-sync"></i>
+                                          </button>
+                                          <button class="btn btn-white border-secondary bg-white btn-md mb-2">
+                                              <i class="fas fa-trash"></i>
+                                          </button>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td data-th="Product">
+                                      <div class="row">
+                                          <div class="col-md-3 text-left">
+                                              <img src="https://via.placeholder.com/250x250/5fa9f8/ffffff" alt="" class="img-fluid d-none d-md-block rounded mb-2 shadow ">
+                                          </div>
+                                          <div class="col-md-9 text-left mt-sm-2">
+                                              <h4>Product Name</h4>
+                                              <p class="font-weight-light">Brand &amp; Name</p>
+                                          </div>
+                                      </div>
+                                  </td>
+                                  <td data-th="Price">$49.00</td>
+                                  <td data-th="Quantity">
+                                      <input type="number" class="form-control form-control-lg text-center" value="1">
+                                  </td>
+                                  <td class="actions" data-th="">
+                                      <div class="text-right">
+                                          <button class="btn btn-white border-secondary bg-white btn-md mb-2">
+                                              <i class="fas fa-sync"></i>
+                                          </button>
+                                          <button class="btn btn-white border-secondary bg-white btn-md mb-2">
+                                              <i class="fas fa-trash"></i>
+                                          </button>
+                                      </div>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                      <div class="float-right text-right">
+                          <h4>Subtotal:</h4>
+                          <h1>$99.00</h1>
+                      </div>
+                  </div>
+              </div>
+              <div class="row mt-4 d-flex align-items-center">
+                  <div class="col-sm-6 order-md-2 text-right">
+                      <a href="catalog.html" class="btn btn-primary mb-4 btn-lg pl-5 pr-5">Checkout</a>
+                  </div>
+                  <div class="col-sm-6 mb-3 mb-m-1 order-md-1 text-md-left">
+                      <a href="catalog.html">
+                          <i class="fas fa-arrow-left mr-2"></i> Continue Shopping</a>
+                  </div>
+              </div>
+          </div>
+          </section>
+    <button onclick="topFunction()" id="top" title="Go to top">Top  <i class="fa-solid fa-arrow-up-from-bracket"></i></button>
+            
+    <script>
+      // Get the button
+      let mybutton = document.getElementById("top");
+      
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      </script> 
+  <footer>
+    <p>&copy; 2023 Nursery Website. All rights reserved. | <a href="privacy.html">Privacy Policy</a></p>
+  </footer>
+</div>
+</body>
+</html>
